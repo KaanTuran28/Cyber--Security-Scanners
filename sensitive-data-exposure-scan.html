@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensitive Data Exposure Tarayıcı</title>
+    <link rel="stylesheet" href="css/sensitive-data-exposure-styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Sensitive Data Exposure Tarayıcı</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Sensitive Data Exposure Nedir?</h2>
+            <p>
+                <strong>Sensitive Data Exposure</strong>, hassas verilerin <strong>yeterince korunmaması</strong> anlamına gelir. Bu durum, kullanıcı bilgileri ve finansal veriler için <strong>ciddi bir tehdit</strong> oluşturabilir. Kötü niyetli kullanıcılar, bu açıkları kullanarak hassas verilere erişim sağlayabilir ve <strong>kimlik hırsızlığı</strong> veya <strong>finansal kayıplar</strong> gibi sonuçlara yol açabilir. Hassas verilerin güvenli bir şekilde korunması için <strong>şifreleme</strong>, <strong>güvenlik duvarları</strong> ve <strong>güçlü kimlik doğrulama</strong> yöntemleri kritik öneme sahiptir.
+            </p>
+            
+
+            <h3>Web Adresi Girin:</h3>
+            <input type="text" id="sensitive-url" placeholder="Örnek: https://www.example.com" aria-label="Web adresini girin">
+            <button onclick="scanSensitive()">Tara</button>
+            <div id="sensitive-results"></div>
+            <p class="disclaimer">Bu web sitesine yapılan tarama sonuçları yalnızca bilgilendirme amaçlıdır ve kullanıcının sorumluluğundadır.</p>
+
+            <!-- Ana Sayfa Butonu -->
+            <button class="home-button" onclick="location.href='index.html'">Ana Sayfaya Dön</button>
+        </section>
+
+        <section id="usage-tips">
+            <h3>Kullanım İpuçları:</h3>
+            <ul>
+                <li><strong>Geçerli bir URL girin:</strong> Tarama yapmak istediğiniz web sayfasının tam ve geçerli URL'sini girdiğinizden emin olun.</li>
+                <li><strong>Tarama işlemi sırasında sayfayı yenilemeyin:</strong> Tarama işlemi devam ederken sayfayı yenilemek, tarama sürecini kesebilir.</li>
+                <li><strong>Sonuçları dikkatlice inceleyin:</strong> Elde edilen sonuçları dikkatlice gözden geçirin.</li>
+                <li><strong>Güvenilir kaynaklardan yararlanın:</strong> Elde ettiğiniz bilgileri yalnızca güvenilir kaynaklarla karşılaştırın.</li>
+                <li><strong>Yasalara uygun hareket edin:</strong> Tarama yapmadan önce, ilgili web sitesinin kullanım koşullarını kontrol edin.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Siber Güvenlik Araçları. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>

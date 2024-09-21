@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siber Güvenlik Araçları</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/music-control.js" defer></script> <!-- JavaScript dosyasını dahil et -->
+</head>
+<body>
+    <header>
+        <h1>Siber Güvenlik Araçları</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Vulnerability Scanner</h2>
+            <div class="button-container">
+                <button onclick="openPage('xss-scan.html')">XSS Tarayıcı</button>
+                <button onclick="openPage('sql-scan.html')">SQL Injection Tarayıcı</button>
+                <button onclick="openPage('csrf-scan.html')">CSRF Tarayıcı</button>
+                <button onclick="openPage('directory-traversal-scan.html')">Directory Traversal Tarayıcı</button>
+                <button onclick="openPage('rfi-scan.html')">RFI Tarayıcı</button>
+                <button onclick="openPage('lfi-scan.html')">LFI Tarayıcı</button>
+                <button onclick="openPage('session-hijacking-scan.html')">Session Hijacking Tarayıcı</button>
+                <button onclick="openPage('security-misconfiguration-scan.html')">Security Misconfiguration Tarayıcı</button>
+                <button onclick="openPage('sensitive-data-exposure-scan.html')">Sensitive Data Exposure Tarayıcı</button>
+            </div>
+            <div class="disclaimer">
+                <p>Bu araçlar yalnızca eğitim amaçlıdır. Yetkisiz kullanımdan kaçının.</p>
+            </div>
+            <button id="play-music">Müziği Başlat/Durdur</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Siber Güvenlik Araçları. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <audio id="background-music" loop>
+        <source src="audio/background.mp3" type="audio/mpeg">
+        Tarayıcınız ses öğesini desteklemiyor.
+    </audio>
+</body>
+</html>

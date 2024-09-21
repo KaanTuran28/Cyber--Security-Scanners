@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XSS Tarayıcı</title>
+    <link rel="stylesheet" href="css/xss-styles.css">
+    <script src="js/xss-scan.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>XSS Tarayıcı</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>XSS Nedir?</h2>
+            <p>
+                <strong>XSS (Cross-Site Scripting)</strong>, kullanıcıdan alınan verilerin yeterince doğrulanmadan web sayfasında işlenmesi sonucu ortaya çıkan bir güvenlik açığıdır. Bu durum, kötü niyetli kullanıcıların zararlı JavaScript kodları eklemesine olanak tanır. XSS saldırıları, genellikle üç türde gerçekleşir: <strong>Stored XSS</strong> (veritabanında saklanan kötü niyetli kod), <strong>Reflected XSS</strong> (kullanıcıyı kötü bir bağlantıya yönlendiren) ve <strong>DOM-based XSS</strong> (tarayıcıda kötü verilerin değiştirilmesi). Bu saldırılar, kullanıcı oturum bilgileri ve hassas verileri çalmak için kullanılabilir; bu nedenle, kullanıcı girdilerinin güvenli bir şekilde işlenmesi ve yeterli doğrulama mekanizmalarının uygulanması kritik öneme sahiptir.
+            </p>
+            
+            
+                   
+            <h3>Web Adresi Girin:</h3>
+            <input type="text" id="xss-url" placeholder="Örnek: https://www.example.com" aria-label="Web adresini girin">
+            <button onclick="scanXSS()">Tara</button>
+            <div id="xss-results"></div>
+            <p class="disclaimer">Bu web sitesine yapılan tarama sonuçları yalnızca bilgilendirme amaçlıdır ve kullanıcının sorumluluğundadır.</p>
+
+            <!-- Ana Sayfa Butonu -->
+            <button class="home-button" onclick="location.href='index.html'">Ana Sayfaya Dön</button>
+        </section>
+        
+        <section id="usage-tips">
+            <h3>Kullanım İpuçları:</h3>
+            <ul>
+                <li><strong>Geçerli bir URL girin:</strong> Lütfen, tarama yapmak istediğiniz web sayfasının tam ve geçerli URL'sini girdiğinizden emin olun. Örnek: <code>https://www.ornek.com</code>.</li>
+                <li><strong>Tarama işlemi sırasında sayfayı yenilemeyin:</strong> Tarama işlemi devam ederken sayfayı yenilemek, tarama sürecini kesebilir ve sonuçların doğru bir şekilde alınmasını engelleyebilir.</li>
+                <li><strong>Sonuçları dikkatlice inceleyin:</strong> Elde edilen sonuçları dikkatlice gözden geçirin. Potansiyel güvenlik açıkları ve öneriler hakkında bilgi sahibi olun.</li>
+                <li><strong>Güvenilir kaynaklardan yararlanın:</strong> Elde ettiğiniz bilgileri yalnızca güvenilir kaynaklarla karşılaştırın. Güvenlik açıkları tespit edilirse, derhal ilgili web sitesi ile iletişime geçin.</li>
+                <li><strong>Yasalara uygun hareket edin:</strong> Tarama yapmadan önce, ilgili web sitesinin kullanım koşullarını ve yasaları kontrol edin. Yetkisiz tarama, yasal sorunlara yol açabilir.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Siber Güvenlik Araçları. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
